@@ -42,16 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.sitemaps',
 
-    'compressor',
-    'captcha',
-    'django_summernote', 
-    'debug_toolbar',
-    'django_extensions',
-    'website.apps.WebsiteConfig',
-    "taggit",
-    'blog',
-    'robots',
-    'accounts',
+
+
 ]
 MULTI_CAPTCHA_ADMIN = {
     'engine': 'simple-captcha',

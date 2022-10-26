@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  {% extends 'base.html' %}
+  {% load static %}
+  {% load blog_tags %}
+  {% load humanize %}
+  {%block content%}
+  <body id="top">
+    <div class="page">
+      <header>
+        <div class="pp-header">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container"><a href="index.html"><img src="{% static 'images/favicon.png' %}" alt="Logo"></a><a class="navbar-brand" href="index.html">Photo Perfect</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item active"><a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="page-content">
+        <div class="container">
+<div class="pp-section pp-container-readable">
+  <article class="pp-post"><a href="blog-post.html"><img class="img-fluid" src="{% static 'images/blog-1.jpg' %}" alt="Blog Image"/></a>
+    <header class="pp-post-header">
+      <div class="pp-post-title"><a class="h4" href="blog-post.html">Healthy Meals for Busy Morning</a></div>
+      <div class="pp-post-meta">
+        <ul>
+          <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>November 04, 2017</span></li>
+          <li><i class="fa fa-tags" aria-hidden="true"></i><span><a href="#"><span>Branding</span></a>, <a href="#"><span>Design</span></a></span></li>
+          <li><i class="fa fa-comments" aria-hidden="true"></i><a href="#">Comments</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="pp-post-content">
+      <p>Whether you've just got a new camera and are looking to learn some new photography techniques or have been shooting for a while and want to master some old ones, this essential photographer's resource is here to help.</p>
+    </div>
+    <div class="pp-post-read-more"><a href="blog-post.html">Read More</a></div>
+  </article>
+  <article class="pp-post"><a href="blog-post.html"><img class="img-fluid" src="{% static 'images/blog-2.jpg' %}" alt="Blog Image"/></a>
+    <header class="pp-post-header">
+      <div class="pp-post-title"><a class="h4" href="blog-post.html">Stay Healthy While Traveling</a></div>
+      <div class="pp-post-meta">
+        <ul>
+          <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>November 04, 2017</span></li>
+          <li><i class="fa fa-tags" aria-hidden="true"></i><span><a href="#"><span>Branding</span></a>, <a href="#"><span>Design</span></a></span></li>
+          <li><i class="fa fa-comments" aria-hidden="true"></i><a href="#">Comments</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="pp-post-content">
+      <p>Whether you've just got a new camera and are looking to learn some new photography techniques or have been shooting for a while and want to master some old ones, this essential photographer's resource is here to help.</p>
+    </div>
+    <div class="pp-post-read-more"><a href="blog-post.html">Read More</a></div>
+  </article>
+  <article class="pp-post"><a href="blog-post.html"><img class="img-fluid" src="{% static 'images/blog-3.jpg' %}" alt="Blog Image"/></a>
+    <header class="pp-post-header">
+      <div class="pp-post-title"><a class="h4" href="blog-post.html">Medicinal Uses of flowers</a></div>
+      <div class="pp-post-meta">
+        <ul>
+          <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>November 04, 2017</span></li>
+          <li><i class="fa fa-tags" aria-hidden="true"></i><span><a href="#"><span>Branding</span></a>, <a href="#"><span>Design</span></a></span></li>
+          <li><i class="fa fa-comments" aria-hidden="true"></i><a href="#">Comments</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="pp-post-content">
+      <p>Whether you've just got a new camera and are looking to learn some new photography techniques or have been shooting for a while and want to master some old ones, this essential photographer's resource is here to help.</p>
+    </div>
+    <div class="pp-post-read-more"><a href="blog-post.html">Read More</a></div>
+  </article>
+  <article class="pp-post"><a href="blog-post.html"><img class="img-fluid" src="{% static 'images/blog-4.jpg' %}" alt="Blog Image"/></a>
+    <header class="pp-post-header">
+      <div class="pp-post-title"><a class="h4" href="blog-post.html">You can do anything if you believe</a></div>
+      <div class="pp-post-meta">
+        <ul>
+          <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>November 04, 2017</span></li>
+          <li><i class="fa fa-tags" aria-hidden="true"></i><span><a href="#"><span>Branding</span></a>, <a href="#"><span>Design</span></a></span></li>
+          <li><i class="fa fa-comments" aria-hidden="true"></i><a href="#">Comments</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="pp-post-content">
+      <p>Whether you've just got a new camera and are looking to learn some new photography techniques or have been shooting for a while and want to master some old ones, this essential photographer's resource is here to help.</p>
+    </div>
+    <div class="pp-post-read-more"><a href="blog-post.html">Read More</a></div>
+  </article>
+  <div class="pp-pagination">
+    <ul>
+      <li><a href="#">← Previous</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">Next →</a></li>
+    </ul>
+  </div>
+</div>
+<div class="pp-section"></div></div>
+      </div>
+    </div>
+    {%endblock%}

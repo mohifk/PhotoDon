@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  {%extends 'base.html'%}
+  {% load static %}
+  {%block content%}
+  <body id="top">
+    <div class="page">
+      <header>
+        <div class="pp-header">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container"><a href="index.html"><img src="{% static 'images/favicon.png' %}" alt="Logo"></a><a class="navbar-brand" href="index.html">Photo Perfect</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item active"><a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="page-content">
+        <div class="container">
+<div class="pp-about container px-0 pp-section">
+  <div class="row mb-2">
+    <div class="col-md-9">
+      <h1 class="h4">Light is beautiful and if you expose for it, it will look awesome</h1>
+      <p class="text-muted">Photography is the science, art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.</p>
+    </div>
+  </div><img class="img-fluid pp-about-img" src="{% static 'images/about-img-1.jpg' %}" alt="About Image"/>
+  <div class="row py-5">
+    <div class="col-md-9 col-sm-12">
+      <div class="h3">Our clients and Partners</div>
+    </div>
+  </div>
+  <div class="row pp-client-brand">
+    <div class="col-md-3 col-sm-12"><img class="img-fluid" src="{% static 'images/about-img-2.png' %}" alt="Brand Logo"/></div>
+    <div class="col-md-3 col-sm-12"><img class="img-fluid" src="{% static 'images/about-img-3.png' %}" alt="Brand Logo"/></div>
+    <div class="col-md-3 col-sm-12"><img class="img-fluid" src="{% static 'images/about-img-4.png' %}" alt="Brand Logo"/></div>
+    <div class="col-md-3 col-sm-12"><img class="img-fluid" src="{% static 'images/about-img-5.png' %}" alt="Brand Logo"/></div>
+  </div>
+  <div class="h3 py-5 mt-5">Our Team</div>
+  <div class="row pp-team">
+    <div class="col-md-3 col-sm-12"><img class="img-fluid" src="{% static 'images/face-1.jpg' %}" alt="Face"/>
+      <div class="h5">Ashley Ford</div>
+      <p>Ceo/Founder</p>
+    </div>
+    <div class="col-md-3 col-sm-12"><img class="img-fluid" src="{% static 'images/face-2.jpg' %}" alt="Face"/>
+      <div class="h5">Royal Anwar</div>
+      <p>Photographer</p>
+    </div>
+    <div class="col-md-3 col-sm-12"><img class="img-fluid" src="{% static 'images/face-3.jpg' %}" alt="Face"/>
+      <div class="h5">Jina Sara</div>
+      <p>Web Developer</p>
+    </div>
+    <div class="col-md-3 col-sm-12"><img class="img-fluid" src="{% static 'images/face-4.jpg' %}" alt="Face"/>
+      <div class="h5">Adelle Charles</div>
+      <p>Web Developer</p>
+    </div>
+  </div>
+</div>
+<div class="pp-section"></div></div>
+      </div>
+    </div>
+    {%endblock%}
