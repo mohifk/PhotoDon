@@ -42,14 +42,21 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.sitemaps',
 
-
-
+    'compressor',
+    'captcha',
+    'django_summernote', 
+    'debug_toolbar',
+    'django_extensions',
+    'website.apps.WebsiteConfig',
+    "taggit",
+    'blog',
+    'robots',
+    'accounts',
+    
 ]
-MULTI_CAPTCHA_ADMIN = {
-    'engine': 'simple-captcha',
-}
+
 #site framwork
-SITE_ID = 2
+SITE_ID = 3
 #robots
 ROBOTS_USE_HOST = True
 ROBOTS_USE_SITEMAP = True
@@ -86,8 +93,14 @@ SUMMERNOTE_CONFIG = {
         }
     }
 
+#captcha admin settings
+MULTI_CAPTCHA_ADMIN = {
+    'engine': 'simple-captcha',
+}
+
 
 MIDDLEWARE = [
+    
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -163,13 +176,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 STATIC_URL = '/static/'
 STATIC_Root=BASE_DIR/'static'
 
@@ -185,7 +192,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
-
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # other finders..
+    'compressor.finders.CompressorFinder',
+)
+CSRF_COOKIE_SECURE=True
+AUTHENTICATION_BACKENDS = ['accounts.backends.EmailBackend'] 
 X_FRAME_OPTIONS = 'SAMEORIGIN' 
-
+COMPRESS_ROOT= STATIC_Root
 EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
